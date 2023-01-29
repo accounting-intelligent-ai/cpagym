@@ -3,10 +3,10 @@
 <img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png" width = "200" height = "200" alt="logo" align=center />
 </a>
 
-# CPAGYM: Accounting [Gym](https://gymnasium.farama.org/)! for Accountant Reinforcement Learning .会计强化学习GYM。
+# CPAGYM: Ai-Accounting [Gym](https://gymnasium.farama.org/)! for Ai-Accountant Reinforcement Learning .会计强化学习GYM。
 
 Redefining [Accounting](https://cpanlp.com/)!
-Developed by **Bfsu Intelligent Accounting Team** (c) 2023
+Developed by **Bfsu Ai-Accounting Team** (c) 2023
 [Github](https://github.com/accounting-intelligent-ai/cpagym)
 
 [![PyPI - Python Version](https://img.shields.io/static/v1?label=pypi&message=v0.0.21&color=blue)](https://pypi.org/project/cpagym/)
