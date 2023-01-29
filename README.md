@@ -1,7 +1,5 @@
 # CPAGYM: Accounting GYM for Accountant Reinforcement Learning .会计强化学习GYM。
-<div  align="center">    
 [![Logo](https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png){:height="100px" width="400px"}](https://cpanlp.com)
-</div>
 Redefining [Accounting](https://cpanlp.com/overview/redefine)!
 Developed by **Bfsu Intelligent Accounting Team** (c) 2023
 [Github](https://github.com/accounting-intelligent-ai/cpagym)
