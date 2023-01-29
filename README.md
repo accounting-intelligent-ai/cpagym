@@ -1,7 +1,8 @@
 
 <a href="https://pypi.org/project/cpagym/">
-<img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png" width = "220" height = "200" alt="logo" align=center />
+<img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png" width = "200" height = "200" alt="logo" align=center />
 </a>
+
 # CPAGYM: Accounting GYM for Accountant Reinforcement Learning .会计强化学习GYM。
 
 Redefining [Accounting](https://cpanlp.com/)!
