@@ -61,6 +61,8 @@ for _ in range(n_steps):
         observation, info = env.reset()
 ```
 ## 配套智能会计包CPANLP
-[![](https://raw.githubusercontent.com/accounting-intelligent-ai/cpanlp/main/cpanlp.png)](https://cpanlp.com)
+<a href="https://pypi.org/project/cpanlp/">
+<img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpanlp/main/cpanlp.png" width = "320" height = "120" alt="logo" align=center />
+</a>
 
 Check out: https://cpanlp.com/reinforcement
