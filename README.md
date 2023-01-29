@@ -9,7 +9,7 @@ Redefining [Accounting](https://cpanlp.com/)!
 Developed by **Bfsu Intelligent Accounting Team** (c) 2023
 [Github](https://github.com/accounting-intelligent-ai/cpagym)
 
-[![PyPI - Python Version](https://img.shields.io/static/v1?label=pypi&message=v0.0.12&color=blue)](https://pypi.org/project/cpanlp/)
+[![PyPI - Python Version](https://img.shields.io/static/v1?label=pypi&message=v0.0.21&color=blue)](https://pypi.org/project/cpagym/)
 [![Downloads](https://static.pepy.tech/badge/cpagym/week)](https://pepy.tech/project/cpagym)
 
 ## Install & Import 安装和导入
@@ -17,10 +17,47 @@ For detailed installation instructions, see the
 [documentation](https://cpanlp.com/documentation).
 ```python
 pip install cpagym
-import gym
+import gymnasium as gym
 import cpagym as cg 
-env = gym.make("Inventory-v0")
 ```
 
-
-Check out: https://cpanlp.com
+## Accounting Envs 主要会计环境
+1. Moral_Hazard 道德风险
+```python
+env = gym.make("Moral_Hazard-v1")
+observation, info = env.reset(seed=2)
+n_steps = 10
+for _ in range(n_steps):
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info = env.step(action)
+    print(observation, reward, terminated, truncated, info )
+    if terminated or truncated:
+        observation, info = env.reset()
+```
+2. AsymmetricInfo 信息不对称
+```python
+env = gym.make("AsymmetricInfo-v1")
+observation, info = env.reset(seed=2)
+n_steps = 20
+for _ in range(n_steps):
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info  = env.step(action)
+    print(observation, reward, terminated, truncated, info )
+    if terminated or truncated:
+        observation, info = env.reset()
+```
+3. Inventory 存货管理
+```python
+env = gym.make("Inventory-v1")
+observation, info = env.reset(seed=2)
+n_steps = 30
+#plot demand
+env.plot_demand()        
+for _ in range(n_steps):
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info  = env.step(action)
+    print(observation, reward, terminated, truncated, info )
+    if terminated or truncated:
+        observation, info = env.reset()
+```
+Check out: https://cpanlp.com/reinforcement
