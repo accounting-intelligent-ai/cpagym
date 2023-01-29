@@ -1,9 +1,9 @@
 
-<a href="https://pypi.org/project/cpagym/">
-<img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png" width = "200" height = "200" alt="logo" align=center />
-</a>
+# Accounting Gym-Env 智能会计强化学习虚拟环境
 
-# CPAGYM: Ai-Accounting [Gym](https://gymnasium.farama.org/)! for Ai-Accountant Reinforcement Learning .会计强化学习GYM。
+<a href="https://pypi.org/project/cpagym/">
+<img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png" width = "300" height = "300" alt="logo" align=center />
+</a>
 
 Redefining [Accounting](https://cpanlp.com/)!
 Developed by **Bfsu Ai-Accounting Team** (c) 2023
@@ -60,4 +60,7 @@ for _ in range(n_steps):
     if terminated or truncated:
         observation, info = env.reset()
 ```
+## 配套智能会计包CPANLP
+[![](https://raw.githubusercontent.com/accounting-intelligent-ai/cpanlp/main/cpanlp.png)](https://cpanlp.com)
+
 Check out: https://cpanlp.com/reinforcement
