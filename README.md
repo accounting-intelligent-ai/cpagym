@@ -1,5 +1,5 @@
 
-# Accounting Gym-Env 智能会计强化学习虚拟环境
+# RL-Accounting  会计强化学习
 
 <a href="https://pypi.org/project/cpagym/">
 <img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpagym/main/cpagym.png" width = "300" height = "300" alt="logo" align=center />
@@ -19,6 +19,7 @@ For detailed installation instructions, see the
 pip install cpagym
 import gymnasium as gym
 import cpagym as cg 
+import torch
 ```
 
 ## Accounting Envs 主要会计环境
@@ -34,32 +35,10 @@ for _ in range(n_steps):
     if terminated or truncated:
         observation, info = env.reset()
 ```
-2. AsymmetricInfo 信息不对称
-```python
-env = gym.make("AsymmetricInfo-v1")
-observation, info = env.reset(seed=2)
-n_steps = 20
-for _ in range(n_steps):
-    action = env.action_space.sample()
-    observation, reward, terminated, truncated, info  = env.step(action)
-    print(observation, reward, terminated, truncated, info )
-    if terminated or truncated:
-        observation, info = env.reset()
-```
-3. Inventory 存货管理
-```python
-env = gym.make("Inventory-v1")
-observation, info = env.reset(seed=2)
-n_steps = 30
-#plot demand
-env.plot_demand()        
-for _ in range(n_steps):
-    action = env.action_space.sample()
-    observation, reward, terminated, truncated, info  = env.step(action)
-    print(observation, reward, terminated, truncated, info )
-    if terminated or truncated:
-        observation, info = env.reset()
-```
+
+## Accounting  RL-Algorithm 会计强化学习算法
+## Accounting  RL-Agent 会计强化学习代理人
+
 ## 配套智能会计包CPANLP
 <a href="https://pypi.org/project/cpanlp/">
 <img src="https://raw.githubusercontent.com/accounting-intelligent-ai/cpanlp/main/cpanlp.png" width = "320" height = "120" alt="logo" align=center />
